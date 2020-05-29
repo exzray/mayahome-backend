@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "renovation-xlwuas",
+  "private_key_id": "98fc1e4df6dc35ff7f8c3e882f6b4636ee68811c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDdgVBXwe1x5fzu\neSyPIna0zRgKeHw6/eA6yzszHs76Khqxp+vNoj3QBNkeaNPo6xgQQAukhH3CGmnP\nbgp9B8JGVqFJyVGQc48JXmmy0z7fRgzlKi6q/EPr02C743EETe1D92rUT0zPb42D\ny9UV4aYDH1ueelRuCXqudlp7OSJs1rE97dIELNESfFl4H7w7zsV5U0LKm369UtLm\nKmryVTRsuZ2pNIMem8J9Quv9pMmE1MPaJ4Xm3Ij0D3sUDeyCjk3Mpb+Y6GISN2/c\nrL6zf1Hf/dYOkk6IZgrR0OcOb0eBkf/ZkF9oG6cAH8cgfablJgcw1hnIV18V/ERm\ntRmWG5vDAgMBAAECggEAT355NwWCEb5YZ71VIIld0MVKO3fCHem+71rAhDgqT92M\ndvWsyr/PLziOMzur0YuNt0dE5mYmO+L+1lLHsNd4AYZVnAWEIDNYwiQACw2FItwh\nBJ1+4h5mwdu6e7PEe6b738iLrmZHSqrePs6ISrIQwk4es2Fzq4n7XWFcV5zJngVD\n5kY5i2UrSIGEPkptRY4AdQO14QMGNn5UmH3rlAeQkLBAcYUtH3V+cWNnqkX7DY7s\nZfvJcfxN35hNexCqG407KYV29ayiHBleVRgc2Qbb3UkSiNCi2RAk1cKPgESZXEUT\nAMVKGZKVnN/oP9/2T0dddx1+XXUi9sve63fseWPiAQKBgQDxh3nUhMYi38bP0Fv8\noHcTJ6Oi+S94WSVDYkVyWfnrrs0rVprPQdaFp18bPaaWoRzjDDj/OgVzf5As2vsu\nDSf46K5meg6FBZj7LOuFCGyVjfbmYXVXM0a2I5RodqDxmZcBxBbH+OyBLScarCmP\nfa6+qSNLhKLr0JNu5PxlYf3o2QKBgQDqxraEci4CVnHUMYgQPQFAvZ0LvUxAR5Fm\n3TSv9Bln0yk2ZVjvBddfPgLjwe8p+CjK+3hI4FNtnpMELDTSLb6NamcloAftrDB0\nLkqbs72F8Mw/8EznjbA/BZQ1a1pr1u5JmemgJ3h5P2gS21Xwk7mrdq/JGE2yiB8b\nQsdrkaFn+wKBgQCzg+PzJrQ1W2ljMBQOkh2uqPmgueCkbG2bxcCkG2f72jI4EeiC\nPwb408uGba4RqrHTt1Ptruw6SgeYrzGdqr2Y7SgilnmQOPbZSSvL9tTt21Q1Kx6R\nr1TRL2Swt+srZuKrt1jPTJ5L7Ilx85/4PIvSvdez22NULfRGqf9GQyz7EQKBgQCh\nqC4oyI4RogBDAdAUjkz8jRND8BY+9IiT8aDDvyp3KRjpkaNJAhaoSASpWvIZTfyY\nt8q9M2l+w3+rkdzVFBZvPWLEr4qGBtheRzmsOHk5bvLU29u4XQGMg4Tnu4HJW3c8\nSrRpSIRVyGkbAtgMDUv9Wn3z0748PipdFQBHe0FOXQKBgQC0zBsZmtQEHlFn3SYI\nKSd0+Vd2NebGDE+6fflFNiTrfOkiCWrHbx6pj33chHqac3I3UO68v9cYFnmYRlKC\nuVOuDXng5b4hqJE1fEW1otnJEjSp0l1ATpygPi1OPyfLVYKcT6/o859pXyQZL7+g\n8P2fIIwQOmtX8WG9mHxq5cXoxQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-client-access@renovation-xlwuas.iam.gserviceaccount.com",
+  "client_id": "113958710394938769847",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-client-access%40renovation-xlwuas.iam.gserviceaccount.com"
+}
