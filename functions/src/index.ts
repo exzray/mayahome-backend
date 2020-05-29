@@ -55,13 +55,6 @@ exports.dialogflowWebhook = functions.https.onRequest(async (request: any, respo
 
     // tslint:disable-next-line:no-shadowed-variable
     async function intentMenu(agent: any) {
-        // Do backend stuff here
-        // const db = admin.firestore();
-        // const profile = db.collection('users').doc('jeffd23');
-        //
-        // const {name, color} = result.parameters;
-        //
-        // await profile.set({name, color});
         const db = admin.firestore();
 
         const doc = await db.collection('responses').doc('IntentMenu').get();
@@ -72,8 +65,22 @@ exports.dialogflowWebhook = functions.https.onRequest(async (request: any, respo
     async function intentRenoCalculator(agent: any) {
         const db = admin.firestore();
 
-        const doc = await db.collection('responses').doc('IntentRenoCalculator').get();
-        agent.add('payload:' + JSON.stringify(doc.data()));
+        const query = await db.collection('packages').get();
+        const packages: any[] = [];
+
+        for (const snapshot of query.docs) {
+            const {kpi, name} = snapshot.data();
+            packages.push({label: name, reply: 'I want ' + name + ', RM ' + kpi});
+        }
+
+        agent.add('payload:' + JSON.stringify({buttons: packages, text: 'Select your package that your want to calculate'}));
+    }
+
+    // tslint:disable-next-line:no-shadowed-variable
+    async function intentRenoCalculate(agent: any){
+        const {price, size} = queryResult.parameters;
+
+        agent.add('The estimation is RM ' + (price * size));
     }
 
     // tslint:disable-next-line:no-shadowed-variable
@@ -88,10 +95,10 @@ exports.dialogflowWebhook = functions.https.onRequest(async (request: any, respo
     async function intentAskEnquire(agent: any) {
         const db = admin.firestore();
 
-        const {name, email, about} = queryResult.parameters;
+        const {name, email, about, file} = queryResult.parameters;
         const reply = '';
 
-        await db.collection('enquires').doc(sessionID).set({name, email, about, reply}, {merge: true});
+        await db.collection('enquires').doc(sessionID).set({name, email, about, file, reply}, {merge: true});
 
         agent.add('Your enquiry has be record! Our staf will reply to your enquiry.');
     }
@@ -161,6 +168,7 @@ exports.dialogflowWebhook = functions.https.onRequest(async (request: any, respo
     intentMap.set('IntentMenu', intentMenu);
     intentMap.set('IntentPackages', intentPackages);
     intentMap.set('IntentRenoCalculator', intentRenoCalculator);
+    intentMap.set('IntentRenoCalculate', intentRenoCalculate);
     intentMap.set('IntentHelpdesk', intentHelpdesk);
     intentMap.set('IntentAskEnquire', intentAskEnquire);
     intentMap.set('IntentCheckEnquire', intentCheckEnquire);
