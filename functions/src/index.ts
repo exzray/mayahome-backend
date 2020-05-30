@@ -115,7 +115,7 @@ exports.dialogflowWebhook = functions.https.onRequest(async (request: any, respo
             const str = reply as string;
 
             if (str.length > 0) {
-                agent.add(`Staf reply: ${reply}`);
+                agent.add(`${reply}`);
             } else {
                 agent.add('no reply yet!');
             }
