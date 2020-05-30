@@ -111,7 +111,7 @@ exports.dialogflowWebhook = functions.https.onRequest(async (request: any, respo
 
         if (snapshot.exists) {
 
-            const {reply} = snapshot.data()
+            const {reply} = snapshot.data();
             const str = reply as string;
 
             if (str.length > 0) {
