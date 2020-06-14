@@ -1,0 +1,36 @@
+{
+  "id": "d927aa32-9526-4e95-8fc2-c85da0ffd8d3",
+  "parentId": "805c472c-e95a-48ba-942f-52c1a57eb0cb",
+  "rootParentId": "805c472c-e95a-48ba-942f-52c1a57eb0cb",
+  "name": "IntentCheckEnquire",
+  "auto": true,
+  "contexts": [
+    "IntentHelpdesk-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "IntentHelpdesk.IntentHelpdesk-custom-2",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

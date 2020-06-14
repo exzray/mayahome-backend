@@ -1,0 +1,65 @@
+{
+  "id": "c0f25462-dd7b-4eff-8c65-447c739f900a",
+  "parentId": "68e458ca-7f0a-408e-b9d0-2ae171c42013",
+  "rootParentId": "68e458ca-7f0a-408e-b9d0-2ae171c42013",
+  "name": "IntentRenoCalculate",
+  "auto": true,
+  "contexts": [
+    "IntentRenoCalculator-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "7952611f-bcf4-4a44-9526-eda162edc9d3",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "price",
+          "value": "$price",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "0400483f-c64c-4dab-8c62-ca8234dc845e",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "size",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter size of renovate area"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

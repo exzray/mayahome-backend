@@ -1,0 +1,109 @@
+{
+  "id": "bcfb0b45-c8e8-4dd4-a102-d9a35089bdbb",
+  "parentId": "805c472c-e95a-48ba-942f-52c1a57eb0cb",
+  "rootParentId": "805c472c-e95a-48ba-942f-52c1a57eb0cb",
+  "name": "IntentAskEnquire",
+  "auto": true,
+  "contexts": [
+    "IntentHelpdesk-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "helpdesk.ask",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "097fd180-8a18-4a90-a9b6-3bad24f353d1",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "name",
+          "value": "$name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "First can we know your name?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "8c381cf8-2358-4cf9-a2a4-be7ac1d45d3a",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$contact",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "We need your email for contact later?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "9b77468c-331a-4d1d-9c3e-0730c6d2c0aa",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "about",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Describe what you need us to help you with?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "37b3d384-1ed9-4355-91e8-1ff6a8e6fa08",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "file",
+          "value": "$description",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "If you have attachment, can use upload button or leave it blank."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

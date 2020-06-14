@@ -1,0 +1,20 @@
+[
+  {
+    "id": "7da27826-c4cb-4e98-8c71-ca2b89eee54d",
+    "data": [
+      {
+        "text": "i want package A, ",
+        "userDefined": false
+      },
+      {
+        "text": "RM 99",
+        "alias": "price",
+        "meta": "@sys.number",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
